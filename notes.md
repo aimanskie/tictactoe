@@ -1,0 +1,2 @@
+so we need first and foremost try to get the grid to work. we just have never tried doing that and see what it brings back
+Alhamdulillah we have tested that the click is working in the boxes. now is to indentify which boxes its clicking. how - either by classing each one or to give dataset to each one

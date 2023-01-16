@@ -1,0 +1,193 @@
+* {
+	font-family: 'Monoton', cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+}
+
+header {
+	background-color: #1a123a;
+	color: antiquewhite;
+	font-size: 2em;
+	text-align: center;
+}
+
+section>h2 {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	display: grid;
+}
+
+.refresh-page,
+.start-game {
+	font-size: 40px;
+}
+
+.score-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	text-align: center;
+	vertical-align: middle;
+	--cell-size: 100px;
+}
+
+.display-player1,
+.score-green {
+	background-color: green;
+}
+
+.display-player2,
+.score-blue {
+	background-color: blue;
+}
+
+.board-tictactoe {
+	width: 100vw;
+	height: 45vh;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
+
+.box-tictactoe {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1px solid rgb(220, 76, 160);
+	cursor: pointer;
+}
+
+.box-tictactoe.green {
+	background-color: green
+}
+
+.box-tictactoe.blue {
+	background-color: blue;
+}
+
+.message-box {
+	text-align: center;
+	font-size: 35px;
+	margin: 0;
+	padding: 0px;
+}
+
+.game-message {
+	margin: 0;
+	padding: 20px;
+}
+
+.button-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+}
+
+.new-game.on {
+	display: grid;
+}
+
+.win-round.on {
+	display: grid;
+	font-size: 50px;
+	color: white;
+}
+
+.audio-controls.on {
+	display: grid;
+	width: 110px;
+	gap: 10px;
+}
+
+.win-round,
+.new-game {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.audio-controls {
+	display: none;
+}
+
+.new-game-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3px;
+	color: antiquewhite;
+	font-size: 35px;
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+}
+
+.top-message {
+	color: antiquewhite;
+	font-size: 30px;
+	margin: 0;
+	padding: 15px;
+}
+
+input[type=text],
+input[type=number] {
+	background-color: #c4ede5;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: large;
+}
+
+footer {
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+
+	* {
+		font-size: medium;
+	}
+
+	input[type=text],
+	input[type=number] {
+		font-size: 20px;
+	}
+
+	.new-game-grid {
+		font-size: 20px;
+	}
+
+	.score-grid {
+		font-size: 10px;
+	}
+
+	.message-box {
+		font-size: 20px;
+	}
+
+	.top-message {
+		font-size: 20px;
+	}
+
+	.win-round.on {
+		font-size: 20px;
+	}
+
+	.start-game,
+	.refresh-page {
+		font-size: 20px;
+	}
+}

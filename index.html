@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacToe</title>
+  <link rel="icon" type='image/x-icon' href="tic-tac-toe.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 class="top-message">Waiting...</h1>
+    </header>
+    <section class="score-grid">
+      <h2 class="display-player1">Player 1</h2>
+      <h2 class="display-draw">Draw</h2>
+      <h2 class="display-player2">Player 2</h2>
+      <h2 class="score-green">0</h2>
+      <h2 class="score-draw">0</h2>
+      <h2 class="score-blue">0</h2>
+    </section>
+    <div class="board-tictactoe">
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+      <div class="box-tictactoe"></div>
+    </div>
+    <div class="message-box">
+      <h2 class="game-message">Press Start to play the game</h2>
+    </div>
+    <section class="button-grid">
+      <button class="refresh-page">New Game</button>
+      <button class="start-game">Start</button>
+      <!-- <button class="refresh-game">Reset</button> -->
+    </section>
+    <section class="new-game on">
+      <div class="new-game-grid">
+        <div>
+          <h1>Let's Play TicTacColors!</h1>
+        </div>
+        <label>Player 1
+          <input type="text" id="player1-input" placeholder="Player 1's Name">
+        </label>
+        <label>Player 2
+          <input type="text" id="player2-input" placeholder="Player 2's Name">
+        </label>
+        <label>Number of Rounds
+          <input type="number" name="number-of-rounds" id="total-rounds" placeholder="Play out of how many rounds">
+        </label>
+        <button type='submit' class="new-game-btn">Ready!</button>
+      </div>
+    </section>
+    <section class="win-round">
+      <div class="winning-page">Win</div>
+      <button class="close-page">Close</button>
+    </section>
+    <footer>
+      <div class="aiman-copy">&copy;aimanskie 2022</div>
+    </footer>
+    <audio controls autoplay class="audio-controls"> -->
+      <source src="Missing-You.mp3" type="audio/mp3">
+    </audio>
+  </main>
+  <script src="tictactoe.js"></script>
+</body>
+
+</html>
